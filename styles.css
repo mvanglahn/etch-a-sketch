@@ -1,3 +1,20 @@
+.container-main {
+    display: block;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.resize {
+    width: 250px;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: lightblue;
+}
+
 .grid-frame{
     display: grid;
     width: 50px;
@@ -6,15 +23,19 @@
     padding: 0;
     justify-content: center;
     align-items: center;
+    border: thin solid;
 }
 
 .etchASketch {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 70%;
 }
+
 .grid {
     border-style: solid;
-    border-width: 0.5px;
+    border-width: thin;
     text-align: center;
     font-size: small;
     height: 30px;
