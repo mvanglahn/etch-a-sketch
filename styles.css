@@ -1,19 +1,26 @@
 .grid-frame{
     display: grid;
-    /* width: 80vw;
-    height: 80vw; */
+    width: 50px;
+    height: 50px;
     margin: 0;
     padding: 0;
     justify-content: center;
     align-items: center;
 }
 
-
+.etchASketch {
+    display: flex;
+    justify-content: center;
+}
 .grid {
     border-style: solid;
     border-width: 0.5px;
     text-align: center;
+    font-size: small;
     height: 30px;
     width: 30px;
+}
 
+.hoverOn {
+    background-color: black;
 }

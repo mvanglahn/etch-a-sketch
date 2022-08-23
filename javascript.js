@@ -20,30 +20,14 @@ function createEle(parent, eleType, html, eleClass){
     return parent.appendChild(ele);
 }
 
-/*function createGrid(col, row){
-    for(let i=0; i<col; i++){
-        const grid = document.getElementById('grid-frame')
-        const createCol = document.createElement('div');
-        createCol.className = 'grid';
-        
-        for(let j=0; j<row; j++){
-            const createRow = document.createElement('div');
-            createRow.className = 'grid';
-            createCol.appendChild(createRow);
-            document.body.appendChild(document.getElementById('grid-frame'));
-        }
-        grid.appendChild(createCol);
-        
-    }
-    
-}
-//createGrid(16,16);
+var box = document.querySelectorAll('.grid');
+box.forEach(elem => elem.addEventListener('mouseover', hoverOn, false));
+//box.addEventListener('mouseovut', hoverOff, false);
 
-function gridCreate (col, row){
-    const grid = document.getElementById('grid-frame');
-    grid.style.gridTemplateColumns = `repeat(${col}, 1fr)`
-    grid.style.gridTemplateRows = `repeat(${row}, 1fr)`
-    
+function hoverOn(){
+    this.classList.add('hoverOn')
 }
 
-gridCreate(16,16);*/
+function hoverOff(){
+    box.setAttribute('style', 'background-color: white')
+}
