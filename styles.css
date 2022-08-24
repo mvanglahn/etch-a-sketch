@@ -1,11 +1,16 @@
 .container-main {
     display: block;
+    justify-content: space-evenly;
 }
 
 .controls {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 30%;
+    height: 100vh;
+    background-color: lightgrey;
+    border-right: solid thin black;
 }
 
 .resize {
@@ -13,6 +18,7 @@
     border-radius: 6px;
     padding: 10px;
     background-color: lightblue;
+    margin-top: 100px;
 }
 
 .grid-frame{
@@ -23,7 +29,7 @@
     padding: 0;
     justify-content: center;
     align-items: center;
-    border: thin solid;
+    margin-top: 100px;
 }
 
 .etchASketch {
