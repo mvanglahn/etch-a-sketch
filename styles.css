@@ -9,6 +9,7 @@
     align-items: center;
     width: 30%;
     height: 100vh;
+    min-width: 275px;
     background-color: lightgrey;
     border-right: solid thin black;
 }
@@ -36,7 +37,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 40%;
+
 }
 
 .grid {
@@ -44,8 +46,8 @@
     border-width: thin;
     text-align: center;
     font-size: small;
-    height: 30px;
-    width: 30px;
+/*    height: 30px;
+    width: 30px; */
 }
 
 .hoverOn {
