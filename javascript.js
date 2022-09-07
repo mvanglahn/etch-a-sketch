@@ -1,6 +1,6 @@
 const sketchArea = document.querySelector('.etchASketch');
 const gridOut = createEle(sketchArea,'div',' ','grid-frame')
-const gridSize = "960";
+const gridSize = "60";
 //const sketch = {x:16, y:16};
 
 createGrid(16*16);
@@ -13,7 +13,7 @@ function createGrid(total){
     var box = document.querySelectorAll('.grid');
     box.forEach(elem => elem.addEventListener('mouseover', hoverOn, false));
     let gridCalc = gridSize / Math.sqrt(total);
-    box.forEach(elem => elem.setAttribute('style', `width: ${gridCalc}px; height: ${gridCalc}px`));
+    box.forEach(elem => elem.setAttribute('style', `width: ${gridCalc}vh; height: ${gridCalc}vh`));
 }
     
 
