@@ -39,11 +39,19 @@ function hoverOff(){
 const resizeBtn = document.getElementById('resize');
 resizeBtn.addEventListener('click', resizeGrid);
 
+const clearBtn = document.getElementById('clear');
+clearBtn.addEventListener('click',  clearGrid());
+
+function clearGrid(){
+    var box = document.querySelectorAll('div');
+    box.forEach(elem => elem.classList.remove('hoverOn'));
+}
+
 function resizeGrid(){
-    let newSize = prompt("What size grid would you like?", "0");
+    let newSize = prompt("What size grid would you like?", "16");
     let newSizeInt = parseInt(newSize, 10);
     if (0 < newSizeInt < 100){
-        clearGrid();
+        document.querySelectorAll(".grid").forEach(el => el.remove());
         createGrid(newSizeInt*newSizeInt);
     } else {
         alert('Please enter a number between 0 and 100.')
@@ -51,7 +59,3 @@ function resizeGrid(){
 
 }
 
-function clearGrid(){
-    document.querySelectorAll(".grid").forEach(el => el.remove());
-
-    }
